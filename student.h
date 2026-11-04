@@ -73,7 +73,7 @@ public:
 	int getScore() const {return score;}
 	char getGrade() const{return grade;}
     student& operator +=(int s) {
-        score + = s;  if (score>100) score =100;
+        score += s;  if (score>100) score =100;
         calGrade ();
         return *this;
     }
